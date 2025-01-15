@@ -1,0 +1,62 @@
+<div class="flex w-full h-screen">
+	<div
+		class="w-3/5 hidden lg:flex flex-col justify-between items-center px-6 py-6 bg-cover bg-norepeat"
+		style="background-image: url('images/bg-login.jpg')"
+	>
+		<!-- <div class="mt-auto mb-auto">
+            <span class="block text-white text-7xl font-semibold">Access to your <br />Diamond <br />Account</span
+            ><span class="block text-white text-3xl mt-4"
+                >Lorem ipsum dolor sit amet, consectetur<br />
+                adipiscing elit. Donec posuere velit nec enim<br />
+                sodales, nec placerat erat tincidunt.
+            </span>
+        </div>
+        <div class="flex items-center gap-5">
+            <span class="text-white font-semibold">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span
+            ><i class="pi pi-github text-3xl p-1 surface-overlay border-circle cursor-pointer"></i
+            ><i class="pi pi-twitter text-3xl p-1 surface-overlay border-circle cursor-pointer"></i>
+        </div> -->
+	</div>
+
+	<div class="w-full lg:w-2/5 h-full text-center p-4 lg:p-8 flex flex-col justify-between items-center">
+		<!-- <img alt="diamond-layout" class="h-4rem mt-4" src="assets/layout/images/logo-dark.svg" /> -->
+		<h5>Logo</h5>
+
+		<div class="mb-3">
+			<h2>Login to your account</h2>
+		</div>
+
+		<form class="flex flex-col items-center gap-6 w-full lg:w-4/5">
+			<p-floatlabel variant="in" class="w-full">
+				<input pInputText ngModel required pSize="large" class="w-full" name="login" autocomplete="off" />
+				<label for="login">E-mail:</label>
+			</p-floatlabel>
+
+			<p-floatlabel variant="in" class="w-full">
+				<p-password
+					ngModel
+					required
+					size="large"
+					styleClass="w-full"
+					inputStyleClass="w-full"
+					name="password"
+					[feedback]="false"
+					[toggleMask]="true"
+				/>
+				<label for="password">Senha:</label>
+			</p-floatlabel>
+
+			<button pButton pRipple size="large" class="!py-4 !px-6">
+				<span class="p-button-label uppercase">entrar</span>
+			</button>
+		</form>
+
+		<div class="mb-3">
+			<p>Forgot password? <a class="text-primary hover:underline cursor-pointer font-medium">Click here</a> to reset.</p>
+		</div>
+
+		<p class="text-color-secondary font-semibold">
+			A problem? <a class="text-primary hover:underline cursor-pointer font-medium">Click here</a> and let us help you.
+		</p>
+	</div>
+</div>

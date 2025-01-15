@@ -324,15 +324,16 @@ export const MyPreset = definePreset(Lara, {
             950: '#022c22',
         },
         formField: {
+            fontSize: '1.12rem',
             paddingX: '0.75rem',
             paddingY: '0.5rem',
             sm: {
-                fontSize: '0.875rem',
+                fontSize: '0.9rem',
                 paddingX: '0.625rem',
                 paddingY: '0.375rem',
             },
             lg: {
-                fontSize: '1.125rem',
+                fontSize: '1.25rem',
                 paddingX: '0.875rem',
                 paddingY: '0.625rem',
             },

@@ -24,5 +24,32 @@ export const appConfig: ApplicationConfig = {
 		providePrimeNG({
 			theme: { preset: MyPreset, options: { darkModeSelector: '.app-dark' } },
 		}),
+
+		// provideToastr(),
+		// provideEnvironmentNgxMask(),
+		// provideEnvironmentNgxCurrency({
+		// 	align: 'left',
+		// 	allowNegative: true,
+		// 	allowZero: true,
+		// 	decimal: ',',
+		// 	precision: 2,
+		// 	prefix: 'R$ ',
+		// 	suffix: '',
+		// 	thousands: '.',
+		// 	nullable: true,
+		// 	min: null,
+		// 	max: null,
+		// 	inputMode: NgxCurrencyInputMode.Financial,
+		// }),
+		// importProvidersFrom(
+		// 	StoreModule.forRoot(reducers, { metaReducers }),
+		// 	StoreModule.forFeature('auth', authReducer),
+		// 	EffectsModule.forRoot([AuthEffects])
+		// ),
+
+		// provideServiceWorker('ngsw-worker.js', {
+		// 	enabled: !isDevMode(),
+		// 	registrationStrategy: 'registerWhenStable:30000',
+		// }),
 	],
 };
